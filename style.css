@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+.parallax{
+  background: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+}
+.parallax-1{
+  background: url('https://images.pexels.com/photos/3369569/pexels-photo-3369569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+}
+.parallax-2{
+  background: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+}
+.parallax-inner{
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+h3{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h1{
+  font-size: 160px;
+  text-align: center;
+}
+
+.images {
+  height: 100px;
+  width: 100px;
+}
+
+.intro-container {
+  display: flex;
+  padding: 15px;
+}
+
+.intro {
+  width: 900px;
+}
+
+.languages {
+  text-align: center;
+  margin-top: 5px;
+  width: 400px;
+}
+
+.picture {
+  height: 300px;
+  width: 300px;
+  box-shadow: 10px 10px 5px;
+}
+
+.blue-text {
+  color: rgb(22, 22, 101);
+  font-weight: bold;
+}
+
+.green-text {
+  color: rgb(40, 94, 40);
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: rgb(167, 167, 11);
+  font-weight: bold;
+}
+
+.lightblue-text {
+  color: rgb(23, 110, 139);
+  font-weight: bold;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.logo h2 {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.8s;
+  color: white;
+}
+
+.logo:hover {
+  box-shadow: 0 0 0 200px rgb(21, 20, 20) inset;
+  cursor: pointer;
+}
+
+.logo:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.one {
+  background-image: url(/Users/JBMSH/repos/Brent-Sharpe/SCZLOGO.png);
+  background-position: center;
+  background-size: cover;
+}
+
