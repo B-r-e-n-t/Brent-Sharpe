@@ -7,68 +7,96 @@
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
 </head>  
 <body>
+
+<div class="big-container">
     <div class="navbar">
-        <div class="menu">Websites I've Built</div>
-        <div class="menu">|</div>
-        <div class="menu">Games I'v Built</div>
-        <div class="menu">|</div>
-        <div class="menu">About Me</div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="#down1">Websites</a>
+              <a href="#down2">Games</a>
+              <a href="#down3">About Me</a>
+            </div>
+          </div>
+
+        <!-- <div class="menu">
+            <a href="#down1"> Websites</a>
+        </div>
+        <div class="menu"><span class="lightblue-text">|</span>
+        </div>
+        <div class="menu">
+            <a href="#down2"> Games</a>
+        </div>
+        <div class="menu"><span class="lightblue-text">|</span></div>
+        <div class="menu">
+            <a href="#down3"> About</a>
+        </div> -->
     </div>
     
-    <section class="1">
-        <section class="parallax">
-            <div class="parallax-inner">
-                <h1>Hi! I'm Brent</h1>
-                <br>
-            </div>
-        </section>
+
 
 <div class="intro-container">
     <div class="languages">
-        <img class="picture" src="/Users/JBMSH/repos/Brent-Sharpe/image_6487327.JPG" alt="">
+        <img class="picture" src="/Users/JBMSH/repos/Brent-Sharpe/IMG-1366.jpg" alt="">
     </div>
 <div class="intro">
-    <h3>I am a front end developer building web applications using <span class="lightblue-text">HTML5</span>, <span class="lightblue-text">CSS3</span>, <span class="lightblue-text">JavaScript</span>, and <span class="lightblue-text">React</span>. Take a look at some of my projects below.</h3>
+    <h3>I'm a front end developer. I build web applications using <span class="lightblue-text">HTML5</span>, <span class="lightblue-text">CSS3</span>, <span class="lightblue-text">JavaScript</span>, and <span class="lightblue-text">React</span>. Take a look at some of my projects below.</h3>
 </div>
 
 </div>
 
-    </section>
 
-    <section class="parallax-1">
-        <div class="parallax-inner">
-            <br>
-            <h1>Websites I've Built</h1>
-            <br>
-        </div>
-    </section>
-    </section>
+            <div id="down1">
+            <h1>Websites</h1>
+            </div>
+         
 
-    <section class="2">
+    
         <div class="logo-container">
             <div class="logo one"><h2>Syracuse Children's Zone</h2><h3>HTML, CSS, JavaScript</h3></div>
             <div class="logo two"><h2>Sharpe Pizza Shop</h2><h3>HTML, CSS, JavaScript</h3></div>
             <div class="logo three"><h2>Lemoyne PFO</h2><h3>HTML, CSS, JavaScript</h3></div>
             <div class="logo four"><h2>Do The Chores App</h2><h3>HTML, CSS, JavaScript</h3></div>
         </div>
-    <section class="parallax-2">
-        <div class="parallax-inner">
-            <br>
-            <h1>Games I've Built</h1>
-            <br>
-        </div>
-    </section>
+  
+            <div id="down2">
+                <h1>Games</h1>
+                </div>
+        
     <div class="logo-container">
         <div class="logo five"><h2><h2>Syracuse Children's Zone</h2><h3>HTML, CSS, JavaScript</h3></div>
         <div class="logo six"><h2>Syracuse Children's Zone</h2><h3>HTML, CSS, JavaScript</h3></div>
         <div class="logo seven"><h2>Syracuse Children's Zone</h2><h3>HTML, CSS, JavaScript</h3></div>
         <div class="logo eight"><h2>Syracuse Children's Zone</h2><h3>HTML, CSS, JavaScript</h3></div>
     </div>
-    </section>
+
+
+    <div id="down3">
+        <h1>About Me</h1>
+        </div>
+    <div class="about-container">
+        <div class="logo resume"><h2>Resume</h2></div>
+        <div class="logo contact"><h2>Contact</h2></div>
+    </div>
+
+
+<div class="bottom-container">
+    <div class="bottom-words">Portfolio Website by Brent Sharpe</div>
+</div>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 
     <script src="script.js"></script>    
 </body>
