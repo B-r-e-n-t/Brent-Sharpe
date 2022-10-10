@@ -3,22 +3,24 @@ body {
   margin: 0;
 }
 
-section {
+/* section {
   background-color: white;
-}
+} */
 
 .hero {
   background-color: #1c1d25;
-  background-image: url(/Users/JBMSH/repos/Brent-Sharpe/calwaen-liew-u4u8yUXkcyE-unsplash.jpg);
+  /* background-image: url(/Users/JBMSH/repos/Brent-Sharpe/calwaen-liew-u4u8yUXkcyE-unsplash.jpg); */
   background-size: contain;
+  display: flex;
+  justify-content: center;
   background-size: 100%;
-  height: 100vh;
-  color: white;
+  height: 100px
+  /* color: white; */
   font-size: 40px;
 }
 
 footer {
-  background-color: black;
+  background-color: #1c1d25;
   color: white;
   text-align: center;
   padding: 80px;
@@ -27,6 +29,7 @@ footer {
 nav {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
 }
 
 ul {
@@ -63,17 +66,21 @@ p {
 
 .hero-area {
   display: flex;
-  height: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-color: #1c1d25;
 }
 
 .hero-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-.button {
+/* .button {
   width: 200px;
   height: 55px;
   border-radius: 30px;
@@ -92,25 +99,26 @@ p {
 .button:active {
   background-color: #A9A9A9;
   color: #808080;
-}
+}  */
 
 .hidden {
   display: none;
 }
 
 .skills {
-  padding-bottom: 200px;
-  display: grid;
-  margin-right: 100px;
-  height: 400px;
-  width: 400px;
+  /* padding-bottom: 200px; */
+  background-color: #1c1d25;
+  display: flex;
+  /* margin-bottom: 200px; */
+  /* height: 400px;
+  width: 400px; */
   /* height: 100%; */
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
-.btn-my-skills {
+/* .btn-my-skills {
   grid-column: 2;
   color: white;
   width: 200px;
@@ -123,32 +131,34 @@ p {
   padding-top: 10px;
   margin-top: 20px;
   margin-right: 50px;
-}
+} */
 
-.btn-my-skills:hover {
+/* .btn-my-skills:hover {
   cursor: pointer;
   background-color: #ef744b;
-}
+} */
 
 .logo {
   height: 80px;
-  margin: 30px;
-    }
+  padding: 15px;
+}
 
 .skill {
   /* margin: 50px; */
-  justify-self: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .skill-icon {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 
 .sub-section {
   display: flex;
   justify-content: space-around;
   padding: 80px;
+  background-color: whitesmoke;
 }
 
 .sub-section-alternative {
