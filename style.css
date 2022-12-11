@@ -10,13 +10,23 @@ body {
 .hero {
   background-color: #1c1d25;
   /* background-image: url(/Users/JBMSH/repos/Brent-Sharpe/calwaen-liew-u4u8yUXkcyE-unsplash.jpg); */
-  background-size: contain;
+  /* background-size: contain; */
   display: flex;
-  justify-content: center;
-  background-size: 100%;
+  /* justify-content: space-around; */
+  /* background-size: 100%; */
   height: 100px
   /* color: white; */
-  font-size: 40px;
+  /* font-size: 40px; */
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+  width: 100%;
 }
 
 footer {
@@ -35,9 +45,9 @@ nav {
 ul {
   display: flex;
   list-style-type: none;
-  width: 500px;
+  /* width: 100%; */
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 li {
@@ -45,7 +55,7 @@ li {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 9vw;
   margin: 0;
 }
 
@@ -106,7 +116,7 @@ p {
 }
 
 .skills {
-  /* padding-bottom: 200px; */
+  padding-top: 75px;
   background-color: #1c1d25;
   display: flex;
   /* margin-bottom: 200px; */
@@ -154,8 +164,13 @@ p {
   width: 75px;
 }
 
+.information {
+  width: 650px;
+}
+
 .sub-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 80px;
   background-color: whitesmoke;
@@ -170,7 +185,6 @@ p {
 
 .headshot {
   width: 300px;
-  margin-left: 80px;
 }
 
 .headshot-container {
@@ -200,6 +214,7 @@ p {
 .project-image {
   margin-top: 25px;
   width: 250px;
+  height: 150px;
   border-radius: 125px;
 }
 
@@ -218,45 +233,49 @@ a {
   color: white;
 }
 
-.hamburger {
+.three {
+  border: rgb(29, 29, 111) solid 1px;
+}
+
+/* .hamburger {
   display: none;
 }
 
 .hamburger:focus{
   outline: 0;
-}
+} */
 
 
 @media only screen and (max-width: 1000px) {
-  .hamburger {
+  /* .hamburger {
       display: block;
       border: 0;
-      background-color: transparent;
+      /* background-color: transparent;
       color: white;
       font-size: 30px;
       margin: 20px;
       align-self: flex-end;
-  }
+  } */
 
   ul {
-      display: none;
-      background-color: #2b2c38;
-      margin: 0ppx;
+      /* display: none; */
+      /* background-color: #2b2c38; */
+      /* margin: 0ppx; */
   }
 
-  ul.show {
+  /* ul.show {
       display: block;
-  }
+  } */
 
-  nav {
+  /* nav {
       display: flex;
       flex-direction: column-reverse;
-      background-color: #2b2c38;
-  }
+      /* background-color: #2b2c38;
+  } */
 
-  .logo {
+  /* .logo {
       display: none;
-  }
+  } */
 }
 
 

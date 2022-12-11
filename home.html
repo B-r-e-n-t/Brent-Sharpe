@@ -9,37 +9,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
-      <nav>
+      <nav class="hero">
         <!-- <img class="logo" src="/Users/JBMSH/repos/Brent-Sharpe/Octocat.png"/> -->
-        <ul id="nav-list">
-          <li><a href="#about-me">About me</a></li>
+        <ul class="nav-list">
+          <li><a href="#about-me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact-me">Contact</a></li>
         </ul>
-        <button class="hamburger" id="hamburger">
+        <!-- <button class="hamburger" id="hamburger">
           <i class="fas fa-bars"></i>
-        </button>
+        </button> -->
       </nav>
-    </div>
 
     <div class="hero-area">
       <div class="hero-text">
         <h1>Brent Sharpe</h1>
         <p>Front End Developer</p>
         <a href="https://github.com/B-r-e-n-t">
-          <img class="logo" src="/Users/JBMSH/repos/Brent-Sharpe/Octocat.png"
+          <img class="logo" src="Octocat.png"
         /></a>
+        <p>Click to view my Github Account</p>
       </div>
     </div>
 
     <div class="skills">
       <div class="skill">
-        <img src="html5-logo-31813.png" alt="" class="skill-icon icon-1" />
+        <img src="images/html5-logo.png" alt="" class="skill-icon icon-1" />
       </div>
       <div class="skill">
         <img
-          src="/Users/JBMSH/repos/Brent-Sharpe/SeekPng.com_javascript-logo-png_803501.png"
+          src="images/css-logo.png"
           alt=""
           class="skill-icon icon-2"
         />
@@ -47,14 +46,14 @@
 
       <div class="skill">
         <img
-          src="/Users/JBMSH/repos/Brent-Sharpe/SeekPng.com_css3-logo-png_1415372.png"
+          src="images/javascript-logo.png"
           alt=""
           class="skill-icon icon-3"
         />
       </div>
       <div class="skill">
         <img
-          src="/Users/JBMSH/repos/Brent-Sharpe/584830f5cef1014c0b5e4aa1.png"
+          src="images/react-logo.png"
           alt=""
           class="skill-icon icon-4"
         />
@@ -62,35 +61,37 @@
     </div>
 
     <div class="sub-section" id="about-me">
-      <div class="information">
-        <h2>About Me</h2>
-        <p>
-          Hi. My name is Brent. I am a former musician and teacher turned
-          self-taught Front End Developer. I build websites and web applications
-          using HTML, CSS, JavaScript, and React.
-        </p>
-      </div>
       <div class="headshot-container">
         <img
           class="headshot"
-          src="/Users/JBMSH/repos/Brent-Sharpe/hi.png"
+          src="images/hi.png"
           alt="Brent's Bitmoji waving"
         />
       </div>
+      <div class="information">
+        <h2>About Me</h2>
+        <p>
+          My name is Brent. I am a former musician and teacher turned
+          Front End Developer. I build websites and web applications
+          using HTML, CSS, JavaScript, and React.
+        </p>
+      </div>
+  
     </div>
     <section class="sub-section-alternative" id="projects">
       <h2>Projects</h2>
       <div class="project-container">
+
         <div class="project-card">
           <img
             class="project-image"
-            src="PigGame.png"
+            src="images/PigGame.png"
             alt="Project One Image"
           />
           <h3>Pig Game</h3>
           <p class="subtext">
             Pig Game is a fun dice game to play with one other person. In this
-            project I used HTML, CSS, and JavaScript.
+            project I used HTML, CSS, and JavaScript. 
           </p>
           <hr />
           <p class="subtext">
@@ -104,43 +105,58 @@
             >
           </p>
         </div>
+
         <div class="project-card">
           <img
             class="project-image"
-            src="src/images/project2.jpg"
+            src="images/Neighbors.png"
             alt="Project One Image"
           />
-          <h3>Project Two</h3>
+          <h3>Neighbors Pizza and Beer Garden</h3>
           <p class="subtext">
-            This is my project and some text about it. I enjoyed making this
-            project.
+            This is a website for a fake pizza restautant. It is a near exact copy of McDougals
+            Chicken based in Nashville. This project uses HTML, CSS, and JavaScript. Some of its 
+            features are the Google Maps API, auto slideshow of images using JavaScript, and 
+            a collage of imags using CSS Grid.
           </p>
           <hr />
           <p class="subtext">
             <a class="project-link" href="https://www.github.com/kubowania"
-              >View here</a
+              >View Live</a
+            >
+          </p>
+          <p class="subtext">
+            <a class="project-link" href="https://github.com/B-r-e-n-t/Pig-Game"
+              >View GitHub</a
             >
           </p>
         </div>
+
         <div class="project-card">
           <img
-            class="project-image"
-            src="src/images/project3.png"
+            class="project-image three"
+            src="images/Sundiver.png"
             alt="Project One Image"
           />
-          <h3>Project Three</h3>
+          <h3>Sundiver Solutions</h3>
           <p class="subtext">
-            This is my project and some text about it. I enjoyed making this
-            project.
+            This is a website for a software development agency. This project was created using
+            React.
           </p>
           <hr />
           <p class="subtext">
             <a class="project-link" href="https://www.github.com/kubowania"
-              >View here</a
+              >View Live</a
+            >
+          </p>
+          <p class="subtext">
+            <a class="project-link" href="https://github.com/B-r-e-n-t/Pig-Game"
+              >View GitHub</a
             >
           </p>
         </div>
-        <div class="project-card">
+
+        <!-- <div class="project-card">
           <img
             class="project-image"
             src="src/images/Project4.jpg"
@@ -157,12 +173,13 @@
               >View here</a
             >
           </p>
-        </div>
+        </div> -->
       </div>
     </section>
+
     <footer id="contact-me">
       <h2>Contact me</h2>
-      <p>@gmail.com</p>
+      <p>jbmsharpe@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>
