@@ -216,6 +216,7 @@ p {
   width: 250px;
   height: 150px;
   border-radius: 125px;
+  border: rgb(29, 29, 111) solid 1px;
 }
 
 hr {
@@ -231,10 +232,6 @@ hr {
 a {
   text-decoration: none;
   color: white;
-}
-
-.three {
-  border: rgb(29, 29, 111) solid 1px;
 }
 
 /* .hamburger {
