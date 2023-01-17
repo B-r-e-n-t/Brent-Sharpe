@@ -37,6 +37,10 @@ body {
   padding: 80px;
 }
 
+#contact-me p {
+  margin: auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
