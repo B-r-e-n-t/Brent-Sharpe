@@ -11,7 +11,7 @@
   <body>
 
 
-      <nav class="navbar">
+    <nav class="navbar">
         <a href="#" class="hamburger-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -25,41 +25,32 @@
             <li><a href="images/resume.pdf">Resume</a></li>
           </ul>
         </div>
-      </nav>
+    </nav>
 
-    <div class="hero-area">
-      <div class="hero-text">
-        <h1>Brent S</h1>
-        <p>Front End Developer</p>
-        <a href="https://github.com/B-r-e-n-t">
-          <img class="logo" src="images/Octocat.png"
-        /></a>
-        <p>Click to view my Github Account</p>
-      </div>
-    </div>
+    <section class="hero-section">
+        <div class="hero-text">
+          <h1>Brent Sharpe</h1>
+          <p>Front End Developer</p>
+          <a href="https://github.com/B-r-e-n-t">
+            <img class="logo" src="images/Octocat.png"
+          /></a>
+          <p>Click to view my Github Account</p>
+        </div>
+    </section>
 
-    <div class="skills">
-      <div class="skill">
-        <img src="images/html5-logo.png" alt="" class="skill-icon icon-1" />
-      </div>
-      <div class="skill">
-        <img
-          src="images/css-logo.png"
-          alt=""
-          class="skill-icon icon-2"
-        />
-      </div>
+    <section class="skills">
+        <div class="skill">
+          <img src="images/html5-logo.png" alt="html icon" class="skill-icon icon-1" />
+        </div>
+        <div class="skill">
+          <img src="images/css-logo.png" alt="css icon"class="skill-icon icon-2"/>
+        </div>
+        <div class="skill">
+          <img src="images/javascript-logo.png" alt="javascript icon" class="skill-icon icon-3"/>
+        </div>
+    </section>
 
-      <div class="skill">
-        <img
-          src="images/javascript-logo.png"
-          alt=""
-          class="skill-icon icon-3"
-        />
-      </div>
-    </div>
-
-    <div class="sub-section" id="about-me">
+    <div class="about-me-section" id="about-me">
       <div class="headshot-container">
         <img
           class="headshot"
@@ -67,17 +58,28 @@
           alt="Brent's Bitmoji waving"
         />
       </div>
-      <div class="information">
+      <div class="about-me-bio">
         <h2>About Me</h2>
         <p>
           My name is Brent. I am a former musician and teacher turned
           Front End Developer. I build websites and web applications
-          using HTML, CSS, and JavaScript.
+          using HTML, CSS, and JavaScript. </p>
+          <div class="line-break"></div>
+          <p>
+          I firmly believe everyone should
+          find an occupation they enjoy. Which is why I have had other careers and 
+          is why I am transitioning to becoming a developer. For me, a job needs 
+          to be something I enjoy doing and something that gives me satisfaction at the end of
+          the day. Programming does that for me. I can look back at the end of the day and 
+          see the results of what I have built. I love coding. I love creating and problem solving. 
+          I want to learn and grow as a developer!
         </p>
       </div>
   
     </div>
-    <section class="sub-section-alternative" id="projects">
+
+
+    <section class="projects-section" id="projects">
       <h2>Projects</h2>
       <div class="project-container">
 
@@ -88,18 +90,18 @@
             alt="Project One Image"
           />
           <h3>Find-A-Dinner</h3>
-          <p class="subtext">
+          <p class="project-description">
             Find-A-Dinner is a web application using the Spoonacular API to search and find dinner ideas 
             using keywords. It works using Fetch() and JSON to receive the recipes and display them
             on the webpage.
           </p>
           <hr />
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://findadinner.netlify.app/" target="_blank"
               >View live</a
             >
           </p>
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://github.com/B-r-e-n-t/Find-A-Dinner" target="_blank"
               >View GitHub</a
             >
@@ -113,19 +115,19 @@
             alt="Project One Image"
           />
           <h3>Neighbors Pizza and Beer Garden</h3>
-          <p class="subtext">
-            Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restautant. It is a near exact copy of McDougals
+          <p class="project-description">
+            Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
             Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
             features are the Google Maps API, auto slideshow of images using JavaScript, and 
             a collage of imags using CSS Grid.
           </p>
           <hr />
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://neighborspizza.netlify.app" target="_blank"
               >View Live</a
             >
           </p>
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://github.com/B-r-e-n-t/Pizza-Shop" target="_blank"
               >View GitHub</a
             >
@@ -139,18 +141,18 @@
             alt="Project One Image"
           />
           <h3>Pig Game</h3>
-          <p class="subtext">
-            Pig Game is a desktop and tablet dice game. The is game was built Vanilla JavaScript. 
+          <p class="project-description">
+            Pig Game is a desktop and tablet dice game. The game was built using vanilla JavaScript. 
             The methods used in the program is mostly event listeners and if/else statements.
             Try it out!
           </p>
           <hr />
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://piggamesharpe.netlify.app/" target="_blank"
               >View Live</a
             >
           </p>
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://github.com/B-r-e-n-t/Pig-Game" target="_blank"
               >View GitHub</a
             >
@@ -165,19 +167,19 @@
             alt="Project One Image"
           />
           <h3>Sharpe Web Designs</h3>
-          <p class="subtext">
+          <p class="project-description">
             Sharpe Web Designs is a fully responsive website for a fake website development agency. 
             It was built with HTML, CSS, and vanilla JavaScript. It features Flexbox, CSS Grid, scrolling animation, 
             and a functioning contact form.
 
           </p>
           <hr />
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://sharpewebdesigns.netlify.app" target="_blank"
               >View Live</a
             >
           </p>
-          <p class="subtext">
+          <p class="project-description">
             <a class="project-link" href="https://github.com/B-r-e-n-t/Sharpe-Web-Designs" target="_blank"
               >View GitHub</a
             >
