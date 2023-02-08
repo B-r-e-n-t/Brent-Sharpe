@@ -14,7 +14,6 @@ body {
 }
 
 .navbar-links ul {
-  list-style-type: none;
   font-size: 25px;
   display: flex;
   justify-content: space-around;
@@ -22,8 +21,12 @@ body {
 
 .navbar-links li {
   padding: 20px;
-  text-decoration: none;
+  list-style: none;
+}
+
+.navbar-links a {
   color: white;
+  text-decoration: none;
 }
 
 .hamburger-button {
@@ -144,7 +147,7 @@ p {
 /*  >>>>>>>>>>>>>>>>>>>>>>>>>      About Me      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 
 .about-me-bio {
-  width: 650px;
+  width: 700px;
 }
 
 .about-me-section {
