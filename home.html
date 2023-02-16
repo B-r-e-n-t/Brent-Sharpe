@@ -7,112 +7,162 @@
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;900&display=swap" rel="stylesheet">
   </head>
   <body>
 
 
-    <nav class="navbar">
-        <a href="#" class="hamburger-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-            <li><a href="images/resume.pdf">Resume</a></li>
-          </ul>
-        </div>
-    </nav>
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/logo-no-background.png" alt="">
+      </div>   
+      <button class="nav-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#my-skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="hero-section">
-        <div class="hero-text">
-          <h1>Brent Sharpe</h1>
-          <p>Front End Developer</p>
-          <a href="https://github.com/B-r-e-n-t">
-            <img class="logo" src="images/Octocat.png"
-          /></a>
-          <p>Click to view my Github Account</p>
-        </div>
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Brent Sharpe</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+      <img src="images/pictureOfMe.jpeg" alt="a picture of Brent Sharpe" class="intro__img">
     </section>
 
-    <section class="skills">
+
+    <section class="my-skills" id="my-skills">
+      <h2 class="section__title section__title--services">What I work with</h2>
+      <div class="skills">
         <div class="skill">
-          <img src="images/html5-logo.png" alt="html icon" class="skill-icon icon-1" />
+          <h3>HTML5</h3>
+          <img src="images/html5-logo.png" alt="html logo" class="skill-icon">
         </div>
         <div class="skill">
-          <img src="images/css-logo.png" alt="css icon"class="skill-icon icon-2"/>
+          <h3>CSS3</h3>
+          <img src="images/css-logo.png" alt="css logo" class="skill-icon">
         </div>
         <div class="skill">
-          <img src="images/javascript-logo.png" alt="javascript icon" class="skill-icon icon-3"/>
+          <h3>JavaScript</h3>
+          <img src="images/javascript-logo.png" alt="JavaScript logo" class="skill-icon">
         </div>
+        <div class="skill">
+          <h3>React</h3>
+          <img src="images/react-logo.png" alt="React logo" class="skill-icon">
+        </div>
+        <div class="skill">
+          <h3>Tailwind</h3>
+          <img src="images/tailwind-logo.png" alt="Tailwind logo" class="skill-icon">
+        </div>
+      </div>
+
+      <a href="https://github.com/B-r-e-n-t?tab=repositories" target="_blank" class="btn">→→ Check out my Github ←←</a>
     </section>
 
-    <div class="about-me-section" id="about-me">
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="images/hi.png"
-          alt="Brent's Bitmoji waving"
-        />
-      </div>
-      <div class="about-me-bio">
-        <h2>About Me</h2>
-        <p>
-          My name is Brent. I'm a musician, teacher, beer lover turned
-          Front End Developer. 
-          I build with HTML, CSS, and JavaScript. </p>
-          <div class="line-break"></div>
-          <p>
-          For some, a job can just be a job. <br>
-          But for me, I find purpose in work where I find:
-          <br>
-          <br>
-          → Real relationships
-          <br>
-          → Results
-          <br>
-          → Opportunities to be creative and solve problems.
-          <br>
-          <br>
-          Programming does that for me. I love coding, and as a lifelong learner, 
-          I enjoy the thrill of expanding my skillset every day.
 
-          <!--  -->
-        </p>
+    <section class="about-me" id="about-me">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">Front-End developer out of Syracuse, NY</p>
+
+      <div class="about-me__body">
+        <p>My name is Brent. I'm a musician, teacher, beer lover turned Front End Developer. 
+          I build with HTML, CSS, and JavaScript.</p>
+        <p>For some, a job can just be a job.
+          But for me, I find purpose in work where I find
+          real relationships, results, and opportunities to be creative and solve problems.
+          
+          Programming does that for me. I love coding, and as a lifelong learner, I enjoy the thrill of expanding my skillset every day.</p>
       </div>
-  
-    </div>
+
+      <img src="images/pictureOfMe2.jpg" alt="Picture of Brent" class="about-me__img">
+    </section>
+
+
+    <!-- <section class="my-work" id="my-work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+      <div class="portfolio">
+        <div class="portfolio-card">
+            <a href="#" class="portfolio__item">
+              <img src="images/findADinner.png" alt="" class="portfolio-img">
+            </a>
+            <p>Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
+              Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
+              features are the Google Maps API, auto slideshow of images using JavaScript, and 
+              a collage of imags using CSS Grid.</p>
+            <a href="Demo"></a>
+            <a href="Github"></a>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="#" class="portfolio__item">
+            <img src="images/Neighbors.png" alt="" class="portfolio-img">
+          </a>
+          <p>Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
+            Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
+            features are the Google Maps API, auto slideshow of images using JavaScript, and 
+            a collage of imags using CSS Grid.</p>
+          <a href="Demo"></a>
+          <a href="Github"></a>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="#" class="portfolio__item">
+            <img src="images/PigGame.png" alt="" class="portfolio-img">
+          </a>
+          <p>Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
+            Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
+            features are the Google Maps API, auto slideshow of images using JavaScript, and 
+            a collage of imags using CSS Grid.</p>
+          <a href="Demo"></a>
+          <a href="Github"></a>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="#" class="portfolio__item">
+            <img src="images/SWD.png" alt="" class="portfolio-img">
+          </a>
+          <p>Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
+            Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
+            features are the Google Maps API, auto slideshow of images using JavaScript, and 
+            a collage of imags using CSS Grid.</p>
+          <a href="Demo"></a>
+          <a href="Github"></a>
+        </div>
+        
+      </div>
+
+    </section> -->
+
 
 
     <section class="projects-section" id="projects">
-      <h2>Projects</h2>
+      <h2 class="section__title section__title--projects">My Work</h2>
       <div class="project-container">
 
         <div class="project-card">
-          <img
-            class="project-image"
-            src="images/findADinner.png"
-            alt="Project One Image"
-          />
+          <img class="project-image" src="images/findADinner.png" alt="Project One Image"/>
           <h3>Find-A-Dinner</h3>
           <p class="project-description">
-            Find-A-Dinner is a web application using the Spoonacular API to search and find dinner ideas 
-            using keywords. It works using Fetch() and JSON to receive the recipes and display them
-            on the webpage.
+            Find-A-Dinner is a web application using the Spoonacular API to search and find dinner ideas and recipes
+            using a keywords search. This project uses HTML, CSS, and JavaScript. It works using Fetch() and JSON to receive the recipes and display the recipess images
+            and links on the UI. Click on the image to view the recipe and begin cooking!
           </p>
           <hr />
           <p class="project-description">
-            <a class="project-link" href="https://findadinner.netlify.app/" target="_blank"
-              >View live</a
-            >
-          </p>
-          <p class="project-description">
-            <a class="project-link" href="https://github.com/B-r-e-n-t/Find-A-Dinner" target="_blank"
-              >View GitHub</a
-            >
+            <a class="project-link" href="https://findadinner.netlify.app/" target="_blank">Demo </a>
+            <a class="project-link" href="https://github.com/B-r-e-n-t/Find-A-Dinner" target="_blank">/ GitHub</a>
           </p>
         </div>
 
@@ -124,22 +174,16 @@
           />
           <h3>Neighbors Pizza and Beer Garden</h3>
           <p class="project-description">
-            Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a near exact copy of McDougals
-            Chicken based in Nashville. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
+            Neighbors Pizza and Beer Garden is a website for a fake (for now) pizza restaurant. It is a replicate of McDougals
+            Chicken. This project uses HTML, CSS, and vanilla JavaScript. Some of its 
             features are the Google Maps API, auto slideshow of images using JavaScript, and 
             a collage of imags using CSS Grid.
           </p>
           <hr />
-          <p class="project-description">
-            <a class="project-link" href="https://neighborspizza.netlify.app" target="_blank"
-              >View Live</a
-            >
-          </p>
-          <p class="project-description">
-            <a class="project-link" href="https://github.com/B-r-e-n-t/Pizza-Shop" target="_blank"
-              >View GitHub</a
-            >
-          </p>
+            <p class="project-description">
+              <a class="project-link" href="https://neighborspizza.netlify.app" target="_blank">Demo </a>
+              <a class="project-link" href="https://github.com/B-r-e-n-t/Pizza-Shop" target="_blank">/ GitHub</a>
+            </p>
         </div>
 
         <div class="project-card">
@@ -150,20 +194,15 @@
           />
           <h3>Pig Game</h3>
           <p class="project-description">
-            Pig Game is a desktop and tablet dice game. The game was built using vanilla JavaScript. 
-            The methods used in the program is mostly event listeners and if/else statements.
+            Pig Game is a desktop and tablet dice game. The game was built using HTML, CSS, and vanilla JavaScript. 
+            The methods used in the program is mostly event listeners and if/else statements. Click to roll the dice and 
+            get as many points as you can collect before rolling a 1. If you roll a run all of your current score is lost.
             Try it out!
           </p>
           <hr />
           <p class="project-description">
-            <a class="project-link" href="https://piggamesharpe.netlify.app/" target="_blank"
-              >View Live</a
-            >
-          </p>
-          <p class="project-description">
-            <a class="project-link" href="https://github.com/B-r-e-n-t/Pig-Game" target="_blank"
-              >View GitHub</a
-            >
+            <a class="project-link" href="https://piggamesharpe.netlify.app" target="_blank">Demo </a>
+            <a class="project-link" href="https://github.com/B-r-e-n-t/Pig-Game" target="_blank">/ GitHub</a>
           </p>
         </div>
 
@@ -177,30 +216,31 @@
           <h3>Sharpe Web Designs</h3>
           <p class="project-description">
             Sharpe Web Designs is a fully responsive website for a fake website development agency. 
-            It was built with HTML, CSS, and vanilla JavaScript. It features Flexbox, CSS Grid, scrolling animation, 
-            and a functioning contact form.
+            It was built with HTML, CSS, and vanilla JavaScript. Some of its features are  Flexbox, CSS Grid, 
+            a fade-in scrolling animation, and a functioning contact form. It consists of a home, contact, about, and 
+            portfolio page.
 
           </p>
           <hr />
           <p class="project-description">
-            <a class="project-link" href="https://sharpewebdesigns.netlify.app" target="_blank"
-              >View Live</a
-            >
-          </p>
-          <p class="project-description">
-            <a class="project-link" href="https://github.com/B-r-e-n-t/Sharpe-Web-Designs" target="_blank"
-              >View GitHub</a
-            >
+            <a class="project-link" href="https://sharpewebdesigns.netlify.app" target="_blank">Demo </a>
+            <a class="project-link" href="https://github.com/B-r-e-n-t/Sharpe-Web-Designs" target="_blank">/ GitHub</a>
           </p>
         </div>
       </div>
     </section>
 
-    <footer id="contact-me">
-      <h3>Contact me</h3>
-      <p>jbmsharpe@gmail.com</p>
+
+
+
+
+
+
+    <footer class="footer">
+      <a href="mailto:jbmsharpe@gmail.com" class="footer__link">jbmsharpe@gmail.com</a>
     </footer>
+
+
 
     <script src="script.js"></script>
   </body>
-</html>
